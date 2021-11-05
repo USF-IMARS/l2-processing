@@ -1,0 +1,10 @@
+#!/bin/bash
+# A script that can contain arbitrary commands to be run after the whole repository has been built.
+
+# TODO:(?) download and run https://download.esa.int/step/snap/8.0/installers/esa-snap_all_unix_8_0.sh
+#
+# install SEADAS
+#wget https://oceandata.sci.gsfc.nasa.gov/SeaDAS/installer/8.1.0/seadas_8.1.0_linux64_installer.sh
+#/bin/bash seadas_8.1.0_linux64_installer.sh
+#
+# TODO: finish this script based on comments from https://github.com/USF-IMARS/python-tech-workgroup/issues/20
