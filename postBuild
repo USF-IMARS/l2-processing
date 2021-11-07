@@ -26,7 +26,7 @@ curl ${OCSSWROOT_REMOTE}/install_ocssw.py --output install_ocssw.py
 chmod 770 install_ocssw.py
 
 ./install_ocssw.py -v \
-  --install_dir $OCSSWROOT \
+  --install-dir $OCSSWROOT \
   --git-base $OCSSWROOT_REMOTE \
   --arch linux_64 \
   --curl \
