@@ -15,7 +15,7 @@
 # See also: [seadas "manual install" instructions](
 #   https://seadas.gsfc.nasa.gov/downloads/
 # )
-OCSSWROOT_DIR=/opt/ocssw
+OCSSWROOT_DIR=~
 OCSSWROOT_REMOTE=https://oceandata.sci.gsfc.nasa.gov/ocssw
 
 mkdir $OCSSWROOT_DIR
