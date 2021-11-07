@@ -18,6 +18,12 @@
 OCSSWROOT_DIR=~/ocssw_install
 OCSSWROOT_REMOTE=https://oceandata.sci.gsfc.nasa.gov/ocssw
 
+# un-git-ify the home directory so that OCSSW installer doesn't bail
+# [ref](
+#   github.com/USF-IMARS/python-tech-workgroup/issues/20#issuecomment-962667117
+# )
+rm -rf ~/.git
+
 mkdir $OCSSWROOT_DIR
 chmod 775 $OCSSWROOT_DIR
 cd $OCSSWROOT_DIR
