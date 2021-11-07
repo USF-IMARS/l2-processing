@@ -19,11 +19,11 @@ OCSSWROOT_DIR=~/ocssw_install
 OCSSWROOT_REMOTE=https://oceandata.sci.gsfc.nasa.gov/ocssw
 
 mkdir $OCSSWROOT_DIR
-chown 775 $OCSSWROOT_DIR
+chmod 775 $OCSSWROOT_DIR
 cd $OCSSWROOT_DIR
 
 curl ${OCSSWROOT_REMOTE}/install_ocssw.py --output install_ocssw.py
-chown 770 install_ocssw.py
+chmod 770 install_ocssw.py
 
 ./install_ocssw.py -v \
   --install_dir $OCSSWROOT \
