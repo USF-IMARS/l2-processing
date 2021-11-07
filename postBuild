@@ -1,10 +1,55 @@
 #!/bin/bash
-# A script that can contain arbitrary commands to be run after the whole repository has been built.
+# A script that can contain arbitrary commands to be run after the whole 
+# repository has been built.
+# ===========================================================================================
+# TODO(?): install SNAP via download and 
+# run https://download.esa.int/step/snap/8.0/installers/esa-snap_all_unix_8_0.sh
+# ===========================================================================================
+# ===========================================================================================
+# === install seadas's OCSSW package for ocean color calculations & GPT =====================
+# ===========================================================================================
+# this installation is based on USF-IMaRS puppet config 
+# [ref]( 
+#   github.com/USF-IMARS/imars_puppet/blob/test/modules/seadas/manifests/install_scripted.pp 
+# )
+# See also: [seadas "manual install" instructions](
+#   https://seadas.gsfc.nasa.gov/downloads/
+# )
+OCSSWROOT_DIR=/opt/ocssw
+OCSSWROOT_REMOTE=https://oceandata.sci.gsfc.nasa.gov/ocssw
 
-# TODO:(?) download and run https://download.esa.int/step/snap/8.0/installers/esa-snap_all_unix_8_0.sh
-#
-# install SEADAS
-#wget https://oceandata.sci.gsfc.nasa.gov/SeaDAS/installer/8.1.0/seadas_8.1.0_linux64_installer.sh
-#/bin/bash seadas_8.1.0_linux64_installer.sh
-#
-# TODO: finish this script based on comments from https://github.com/USF-IMARS/python-tech-workgroup/issues/20
+mkdir $OCSSWROOT_DIR
+chown 775 $OCSSWROOT_DIR
+cd $OCSSWROOT_DIR
+
+curl ${OCSSWROOT_REMOTE}/install_ocssw.py --output install_ocssw.py
+chown 770 install_ocssw.py
+
+./install_ocssw.py -v \
+  --install_dir $OCSSWROOT \
+  --git-base $OCSSWROOT_REMOTE \
+  --arch linux_64 \
+  --curl \
+  --aqua --terra --olcis3a --olcis3b
+# NOTE: other install options:
+# --aqua                install MODIS Aqua files
+# --terra               install MODIS Terra files
+# --olci                install Sentinel-3A OLCI files
+# === others we might want:
+# --aquarius            install Aquarius files
+# --avhrr               install AVHRR files
+# --czcs                install CZCS files
+# --goci                install GOCI files
+# --hico                install HICO files
+# --meris               install MERIS files
+# --mos                 install MOS files
+# --ocm1                install OCM1 files
+# --ocm2                install OCM2 files
+# --octs                install OCTS files
+# --oli                 install Landsat 8 OLI files
+# --osmi                install OSMI files
+# --seawifs             install SeaWiFS files
+# --viirsn              install VIIRSN files
+# --direct-broadcast    install direct broadcast files
+# --eval                install evaluation sensor files
+# ===========================================================================================
