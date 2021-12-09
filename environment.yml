@@ -6,6 +6,7 @@ dependencies:
   - numpy
   - scipy
   - pip
+  - basemap~=1.2.2
   - pip:
     - pandas~=1.3.3
     - parse~=1.19.0
