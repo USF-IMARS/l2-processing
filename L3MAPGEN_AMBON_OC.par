@@ -1,9 +1,9 @@
 product=Rrs_412,Rrs_443,Rrs_488,Rrs_531,Rrs_547,Rrs_667,Rrs_678,par,nflh,chl_ocx,chlor_a
 resolution=1km
 interp=area
-north=73
-south=67
-west=-171
-east=-157
+north=26
+south=23
+west=-85
+east=-78.5
 central_meridian=0
 fudge=3.0
