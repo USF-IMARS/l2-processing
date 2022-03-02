@@ -7,7 +7,7 @@ class Test_CollectDataFiles(TestCase):
     def test_collect_granules(self):
         """ look at the .nc files in a dir and ls the ones to be used in a mosaic """
         import os
-        path_in=os.path.expanduser('~/MODA_OC_py_data')
+        path_in=os.path.expanduser('./MODA_OC_py_data')
         # Retrieve filelist
         basename = os.path.basename(path_in)
 
