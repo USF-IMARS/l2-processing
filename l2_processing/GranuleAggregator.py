@@ -58,7 +58,13 @@ class GranuleAggregator(object):
         #         print("unknown product type")
 
     def get_daily_granules(self):
-        """Group granule files by date and write a .txt file for each day."""
+        """Group granule files by date and write a .txt file for each day.
+        
+        Returns
+        -------
+        list of .txt filepaths
+            list of .txt files created
+        """
         days_to_mosaic = {}
         for granule_filename in self.granules:
             granule_metadata = self.granule_files[granule_filename]
@@ -67,8 +73,12 @@ class GranuleAggregator(object):
                 days_to_mosaic[day_date] = []
             days_to_mosaic[day_date].append(granule_filename)  # add this granule to the appropriate day
 
+        txt_file_list = []
         for day_to_mosaic in days_to_mosaic:
             # create .txt with list of input files
-            with open(f"files_to_mosaic_{day_to_mosaic}.txt", 'w') as txt_file:
+            txt_fpath = f"files_to_mosaic_{day_to_mosaic}.txt"
+            with open(txt_fpath, 'w') as txt_file:
                 txt_file.write(' \n'.join(days_to_mosaic[day_to_mosaic]))
+                txt_file_list.append(txt_fpath)
+        return txt_file_list
 
