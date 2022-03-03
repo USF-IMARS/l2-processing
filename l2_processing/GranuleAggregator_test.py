@@ -7,9 +7,8 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
     def test_collect_granules_from_test_data(self):
         """List of granules in ./MODA_OC_py_data is correct"""
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
-        list_of_granule_files = aggregator.get_granule_files()
         self.assertEqual(
-            list_of_granule_files,
+            aggregator.get_granule_files(),
             [
                 'A2007143182500.L2_LAC_OC.x.nc',
                 'A2007143183000.L2_LAC_OC.x.nc',
@@ -29,9 +28,8 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
     def test_daily_group_granules_from_test_data(self):
         """List .txt files generated from granules in ./MODA_OC_py_data is correct"""
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
-        list_of_txt_files = aggregator.get_daily_granules()
         self.assertEqual(
-            list_of_granule_files,
+            aggregator.get_daily_granules(),
             [
                 'files_to_mosaic_000.txt',
                 'files_to_mosaic_001.txt',
