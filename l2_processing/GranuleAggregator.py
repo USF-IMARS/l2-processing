@@ -45,10 +45,12 @@ class GranuleAggregator(object):
         """Read metadata from the granule file paths and create the self.granule_files dict."""
         for filename in self.granule_files:
             params_parsed = parse(self.granule_file_format_str, filename)
-            params_parsed["dt_obj"] = datetime.strptime(str(params_parsed['dt']), "%Y%j%H%M%S")
-            print(f"{filename} | {params_parsed}")  # TODO: use logger here
-            self.granules[filename] = params_parsed
-            
+            file_metadata = {
+                'metadata_parsed_from_fname': params_parsed,
+                'datetime_obj': datetime.strptime(str(params_parsed['dt']), "%Y%j%H%M%S")
+            }
+            print(f"{filename} | {file_metadata}")  # TODO: use logger here
+            self.granules[filename] = file_metadata     
             
         #     if params_parsed['product_type'] == "OC":
         #         print("ocean color")
