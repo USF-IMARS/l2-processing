@@ -69,7 +69,7 @@ class GranuleAggregator(object):
         """
         days_to_mosaic = {}
         for granule_filename in self.granules:
-            granule_metadata = self.granule_files[granule_filename]
+            granule_metadata = self.granules[granule_filename]
             day_date = granule_metadata["dt_obj"].date()
             if days_to_mosaic.get(day_date) is None:  # if no granules for this day yet
                 days_to_mosaic[day_date] = []
