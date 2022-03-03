@@ -3,7 +3,7 @@ import os
 
 from parse import parse
 
-class granule_aggregator(object):
+class GranuleAggregator(object):
     """
     used to aggregate granule files into temporal resolutions like:
         * daily
