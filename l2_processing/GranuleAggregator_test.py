@@ -8,8 +8,8 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
         """List of granules in ./MODA_OC_py_data is correct"""
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
         self.assertEqual(
-            aggregator.get_granule_files(),
-            [
+            sorted(aggregator.get_granule_files()),
+            sorted([
                 'A2007143182500.L2_LAC_OC.x.nc',
                 'A2007143183000.L2_LAC_OC.x.nc',
                 'A2007143200500.L2_LAC_OC.x.nc',
@@ -20,7 +20,7 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
                 'A2007146185500.L2_LAC_OC.x.nc',
                 'A2007146190000.L2_LAC_OC.x.nc',
                 'A2007146203500.L2_LAC_OC.x.nc',
-            ]
+            ])
         )
 
         
@@ -30,12 +30,12 @@ class Test_GranuleAggregator_get_daily_granules(TestCase):
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
         self.assertEqual(
             sorted(aggregator.get_daily_granules()),
-            [
+            sorted([
                 'files_to_mosaic_2007-05-23.txt',
                 'files_to_mosaic_2007-05-24.txt',
                 'files_to_mosaic_2007-05-25.txt',
                 'files_to_mosaic_2007-05-26.txt',
-            ]
+            ])
         )
 
         
