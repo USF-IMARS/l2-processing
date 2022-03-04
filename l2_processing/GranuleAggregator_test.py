@@ -24,7 +24,7 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
         )
 
         
-class Test_GranuleAggregator_get_granule_files(TestCase):
+class Test_GranuleAggregator_get_daily_granules(TestCase):
     def test_daily_group_granules_from_test_data(self):
         """List .txt files generated from granules in ./MODA_OC_py_data is correct"""
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
