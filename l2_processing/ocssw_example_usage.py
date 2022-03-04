@@ -22,7 +22,7 @@ def generate_l2bin_call(txt_filepath_in):
     # TODO: get parfile depending on what we are processing
     #       3 product classes: oc, sst4, iop
     # TODO: generalize filepath generation
-    CMD = [
+    return [
         'l2bin', 
         f'ifile={txt_filepath_in}',  # .txt with list of .nc files
         f'ofile={FPATH_PREFIX}/L2BIN/OC/{txt_filepath_in}.l3b',  # where the .l3b will go
