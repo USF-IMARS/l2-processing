@@ -39,3 +39,15 @@ class Test_GranuleAggregator_get_daily_granules(TestCase):
         )
 
         
+class Test_parse_granule_metadata_from_filenames(TestCase):
+    """date is parsed correctly from example filename"""
+    def test_example_filename(self):
+        aggregator = GranuleAggregator()
+        FNAME = "A2007145195500.L2_LAC_OC.x.nc"
+        aggregator.granule_files = [FNAME]
+        aggregator.parse_granule_metadata_from_filenames() 
+        self.assertEqual(
+            self.granules[FNAME]['datetime_obj'],
+            datetime.datetime(2007, 5, 25, 19, 55)
+        )
+
