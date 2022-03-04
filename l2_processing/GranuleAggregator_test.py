@@ -29,12 +29,12 @@ class Test_GranuleAggregator_get_granule_files(TestCase):
         """List .txt files generated from granules in ./MODA_OC_py_data is correct"""
         aggregator = GranuleAggregator(granules_directory='./MODA_OC_py_data')
         self.assertEqual(
-            aggregator.get_daily_granules(),
+            sorted(aggregator.get_daily_granules()),
             [
                 'files_to_mosaic_2007-05-23.txt',
-                'files_to_mosaic_2007-05-26.txt',
                 'files_to_mosaic_2007-05-24.txt',
-                'files_to_mosaic_2007-05-25.txt'
+                'files_to_mosaic_2007-05-25.txt',
+                'files_to_mosaic_2007-05-26.txt',
             ]
         )
 
