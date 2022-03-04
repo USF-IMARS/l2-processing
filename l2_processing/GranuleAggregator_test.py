@@ -47,7 +47,7 @@ class Test_parse_granule_metadata_from_filenames(TestCase):
         aggregator.granule_files = [FNAME]
         aggregator.parse_granule_metadata_from_filenames() 
         self.assertEqual(
-            self.granules[FNAME]['datetime_obj'],
+            aggregator.granules[FNAME]['datetime_obj'],
             datetime.datetime(2007, 5, 25, 19, 55)
         )
 
