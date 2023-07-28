@@ -5,8 +5,9 @@
 2. Buoy data from NDBC
 3. River discharge data from USGS
 
-### Satellite imagery 
 ### TODO: These routines need to be cleaned up and naming conventions standardized
+
+### Satellite imagery 
 1. Mosaic pass files to 1-Day scenes over entire ROI (MOSAIC_OC_func_GOMdb_v2023.m - run by run_mosaic_1D_GOMdb_v2023.m)
 2. Create 7-day means (MEAN_7D_func_GOMdb_MODA(and VSNPP).m - run by run_mean_7D_GOMdbv2_GOM.m)
 3. Extract values at polygons and points of interest (Extract_satTS_func_GOM2023.m - saves as .mat)
