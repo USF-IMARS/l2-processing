@@ -28,11 +28,11 @@ Can we streamline the above (will need to include SEUS)
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
    - Files are big! Order one station at a time. Need 4 digit code to select station to match w/NDBC real-time data
 2. Current data - Through NDBC: 
-    Sap Island SAQG1 (sapldq - Lower Duplin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/SAQG1.ocean)
-    ACE Basin ACQS1 (acegp - Grove Plantation) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ACQS1.ocean)
-    Winyah Bay WYSS1 (niwws - Winyah Bay Surface) - Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/WYSS1.ocean)
-    Zeke's Basin ZBQN7 (noczb - Zekes's Basin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ZBQN7.ocean)
-    GuanTM GTQF1 (gtmpc - Pellicer Creek) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/GTQF1.ocean)
+   - Sap Island SAQG1 (sapldq - Lower Duplin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/SAQG1.ocean)
+   - ACE Basin ACQS1 (acegp - Grove Plantation) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ACQS1.ocean)
+   - Winyah Bay WYSS1 (niwws - Winyah Bay Surface) - Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/WYSS1.ocean)
+   - Zeke's Basin ZBQN7 (noczb - Zekes's Basin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ZBQN7.ocean)
+   - GuanTM GTQF1 (gtmpc - Pellicer Creek) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/GTQF1.ocean)
 
 
 
