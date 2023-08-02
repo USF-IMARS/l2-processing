@@ -27,6 +27,7 @@ Can we streamline the above (will need to include SEUS)
 ### NERRS WQ Data for SEUS roi only - could use for others
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
    - Files are big! Order one station at a time. Need 4 digit code to select station to match w/NDBC real-time data
+   - loc_IDs={'sapldq','acegp','niwws','noczb','gtmpc'};
 2. Current data - Through NDBC: 
    - Sap Island SAQG1 (sapldq - Lower Duplin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/SAQG1.ocean)
    - ACE Basin ACQS1 (acegp - Grove Plantation) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ACQS1.ocean)
