@@ -13,7 +13,7 @@
 
 ### Satellite imagery 
 1. Mosaic pass files to 1-Day scenes over entire ROI (MOSAIC_OC_func_dbv23.m - run by run_MOSAIC_1D_dbv23.m)*
-2. Create 7-day means (MEAN_7D_func_dbv23.m - run by run_MEAN_7D_dbv23.m)
+2. Create 7-day means (MEAN_7D_func_dbv23.m - run by run_MEAN_7D_dbv23.m)*
 3. Extract values at polygons and points of interest (Extract_satTS_func_GOM2023.m - saves as .mat)
   Two versions: one for all files and one for recent files (to save time on tpa_pgs)
 4. Convert .mat time series files to .csv (TS_BIN_CSV_func_dbv2_all.m - sets output directory for .csv; transistions at 1/1/2023)
