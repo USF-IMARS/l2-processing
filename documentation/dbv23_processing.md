@@ -12,8 +12,8 @@
 ### TODO: These routines are in the process of being cleaned up and naming conventions standardized (in-progress July 2023)
 
 ### Satellite imagery 
-1. Mosaic pass files to 1-Day scenes over entire ROI (MOSAIC_OC_func_GOMdb_v2023.m - run by run_mosaic_1D_GOMdb_v2023.m)
-2. Create 7-day means (MEAN_7D_func_GOMdb_MODA(and VSNPP).m - run by run_mean_7D_GOMdbv2_GOM.m)
+1. Mosaic pass files to 1-Day scenes over entire ROI (MOSAIC_OC_func_dbv23.m - run by run_MOSAIC_1D_dbv23.m)*
+2. Create 7-day means (MEAN_7D_func_dbv23.m - run by run_MEAN_7D_dbv23.m)
 3. Extract values at polygons and points of interest (Extract_satTS_func_GOM2023.m - saves as .mat)
   Two versions: one for all files and one for recent files (to save time on tpa_pgs)
 4. Convert .mat time series files to .csv (TS_BIN_CSV_func_dbv2_all.m - sets output directory for .csv; transistions at 1/1/2023)
@@ -21,7 +21,7 @@
   Both routines above (3 and 4) are run by RUN_EXT_1D_GOM_dbv2.m
 
 ### USGS discharge
-1. get_USGS_disharge_dbv2.sh (gets raw text files from API)
+1. get_USGS_disharge_dbv23.sh (gets raw text files from API)
 2. txt2csv_USGS_FGB_dbv2.m (converts raw text file to output .csv)
 3. txt2csv_USGS_FK_dbv2.m (converts raw text file to output .csv)
 Can we merge the above (2 and 3)?
