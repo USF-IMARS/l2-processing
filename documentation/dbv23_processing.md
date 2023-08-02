@@ -20,12 +20,18 @@
   Two versions: one for all files and one for recent files (to save time on tpa_pgs)
   Both routines above (3 and 4) are run by RUN_EXT_1D_GOM_dbv2.m
 
+### USGS discharge
+1. get_USGS_disharge_dbv2.sh (gets raw text files from API)
+2. txt2csv_USGS_FGB_dbv2.m (converts raw text file to output .csv)
+3. txt2csv_USGS_FK_dbv2.m (converts raw text file to output .csv)
+Can we merge the above (2 and 3)?
+
 ### NDBC Buoy data
 1. get_NDBC_temp_sal_FK_dbv2.sh (gets raw text files from API)
 2. get_data_NDBC_FK_dbv2.m (converts raw text file to output .csv)
 Can we streamline the above (will need to include SEUS)
 
-### NERRS WQ Data for SEUS roi only - could use for others
+### NERRS WQ data for SEUS roi only - could use for others
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
    - Files are big! Order one station at a time. Need 4 digit code to select station to match w/NDBC real-time data
    - loc_IDs={'sapldq','acegp','niwws','noczb','gtmpc'};
@@ -39,8 +45,4 @@ Can we streamline the above (will need to include SEUS)
 
 
 
-### USGS discharge
-1. get_USGS_disharge_dbv2.sh (gets raw text files from API)
-2. txt2csv_USGS_FGB_dbv2.m (converts raw text file to output .csv)
-3. txt2csv_USGS_FK_dbv2.m (converts raw text file to output .csv)
-Can we merge the above (2 and 3)?
+
