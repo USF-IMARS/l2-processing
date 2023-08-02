@@ -1,11 +1,14 @@
 ## Processing steps and MATLAB routines for dashboard processing
 
+### @dotis recently updated MATLAB processing routines for the workflows below in July 2023
+### These new scripts are here: /home1/dotis/DB_files/DB_v23
+
 ### Processing streams:
 1. Satellite imagery
 2. Buoy data from NDBC
 3. River discharge data from USGS
 
-### TODO: These routines need to be cleaned up and naming conventions standardized
+### TODO: These routines are in the process of being cleaned up and naming conventions standardized (in-progress July 2023)
 
 ### Satellite imagery 
 1. Mosaic pass files to 1-Day scenes over entire ROI (MOSAIC_OC_func_GOMdb_v2023.m - run by run_mosaic_1D_GOMdb_v2023.m)
@@ -24,7 +27,13 @@ Can we streamline the above (will need to include SEUS)
 ### NERRS WQ Data for SEUS roi only - could use for others
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
    - Files are big! Order one station at a time. Need 4 digit code to select station to match w/NDBC real-time data
-2. Current data - Through NDBC (
+2. Current data - Through NDBC: 
+    Sap Island SAQG1 (sapldq - Lower Duplin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/SAQG1.ocean)
+    ACE Basin ACQS1 (acegp - Grove Plantation) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ACQS1.ocean)
+    Winyah Bay WYSS1 (niwws - Winyah Bay Surface) - Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/WYSS1.ocean)
+    Zeke's Basin ZBQN7 (noczb - Zekes's Basin) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/ZBQN7.ocean)
+    GuanTM GTQF1 (gtmpc - Pellicer Creek) Last 45 days of data (https://www.ndbc.noaa.gov/data/realtime2/GTQF1.ocean)
+
 
 
 
