@@ -5,8 +5,9 @@
 
 ### Processing streams:
 1. Satellite imagery
-2. Buoy data from NDBC
-3. River discharge data from USGS
+2. River discharge data from USGS
+3. Buoy data from NDBC (FK only)
+4. WQ data from NERRS (SEUS only)
 
 ### TODO: These routines are in the process of being cleaned up and naming conventions standardized (in-progress July 2023)
 
