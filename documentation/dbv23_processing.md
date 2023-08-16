@@ -34,6 +34,7 @@ Can we streamline the above (will need to include SEUS)
 ### NERRS WQ data for SEUS roi only - could use for others
 ### Update 8/16/23: CDMO does have web services to get regular data
 Link here: https://cdmo.baruch.sc.edu/webservices.cfm
+
 Dan Ramage (RAMAGED@mailbox.sc.edu) and Melissa Ide (melissa@baruch.sc.edu) are contacts. Nutrient data is not real time.
 
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
