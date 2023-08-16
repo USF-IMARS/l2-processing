@@ -32,6 +32,10 @@ Can we merge the above (2 and 3)?
 Can we streamline the above (will need to include SEUS)
 
 ### NERRS WQ data for SEUS roi only - could use for others
+### Update 8/16/23: CDMO does have web services to get regular data
+Link here: https://cdmo.baruch.sc.edu/webservices.cfm
+Dan Ramage (RAMAGED@mailbox.sc.edu) and Melissa Ide (melissa@baruch.sc.edu) are contacts. Nutrient data is not real time.
+
 1. Historical data - downloaded at (https://cdmo.baruch.sc.edu/aqs/)
    - Files are big! Order one station at a time. Need 4 digit code to select station to match w/NDBC real-time data
    - loc_IDs={'sapldq','acegp','niwws','noczb','gtmpc'};
